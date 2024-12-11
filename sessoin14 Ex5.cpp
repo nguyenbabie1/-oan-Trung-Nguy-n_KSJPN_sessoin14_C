@@ -2,17 +2,20 @@
 #include <string.h>
 
 int main(){
-	char chuoi[100];
-	int count=0;
-	int n;
-		printf("Nhap chuoi bat ky :");
-		scanf("%c",&n); 
-		fgets(chuoi, sizeof(chuoi), stdin);
-    for(int i = 0; i < strlen(chuoi); i++) {
-        if(chuoi[i] == n) {
-            count++;
-        }
-    }
-	printf("So lan xuat hien ky tu : %d\n", count,n);
-	return 0;
+	char nocnha[50];
+	int check;
+	printf("Moi ban nhap chuoi ki tu bat ki : ");
+	fgets(nocnha, 50 , stdin);
+	printf("Chuoi ki tu cua ban : ");
+	fputs(nocnha , stdout);
+	
+	for(int i = 0; i < strlen(nocnha) ; i++){
+		if(nocnha[i] == ' '){
+			check++;
+		}
+		if(check == 1){
+			check++;
+		}
+	}
+	printf("Chuoi ki tu cua ban gom %d tu ", check);
 }
