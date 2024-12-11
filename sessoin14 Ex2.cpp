@@ -3,7 +3,7 @@
 
 int main() {
     char nocnha[50];
-    printf("Moi ban nhap vao ho va ten: ");
+    printf("Moi ban nhap vao ki tu: ");
     fgets(nocnha, 50, stdin);
     printf("Ky tu vua nhap la: %s",nocnha);
 //In ra co khoang trang 
